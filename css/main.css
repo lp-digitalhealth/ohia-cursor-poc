@@ -1,0 +1,324 @@
+.priorities-section .section-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--ohia-blue);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 8px rgba(13, 35, 70, 0.08);
+}
+/* Strategic Priorities Section */
+.priorities-section {
+  background: var(--ohia-white);
+  padding: 3rem 0 3rem 0;
+}
+.priorities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.priority-card {
+  background: linear-gradient(100deg, #e3f2fd 60%, #e8f5e9 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(13, 35, 70, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+  outline: none;
+}
+.priority-card:focus,
+.priority-card:hover {
+  box-shadow: 0 8px 32px rgba(13, 35, 70, 0.18);
+  transform: translateY(-2px) scale(1.01);
+}
+.priority-toggle {
+  background: none;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--ohia-blue);
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  transition: color 0.2s;
+}
+.priority-toggle:focus {
+  color: var(--ohia-accent);
+  outline: 2px solid var(--ohia-accent);
+}
+.priority-details {
+  font-size: 1.25rem;
+  color: var(--ohia-dark);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+.priority-details h4 {
+  font-size: 1.1rem;
+  color: var(--ohia-green);
+  margin-bottom: 0.3rem;
+}
+.priority-status {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ohia-accent);
+}
+/* Visual placeholder for each priority */
+.priority-visual {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(13, 35, 70, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.priority-visual img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+@media (max-width: 900px) {
+  .priority-card {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .priority-toggle {
+    font-size: 1.3rem;
+  }
+  .priority-visual {
+    width: 56px;
+    height: 56px;
+    top: 1rem;
+    right: 1rem;
+  }
+  .priority-visual img {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .priorities-list {
+    gap: 1rem;
+  }
+  .priority-card {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .priority-toggle {
+    font-size: 1rem;
+  }
+  .priority-details {
+    font-size: 1rem;
+  }
+}
+/* OHIA Main Stylesheet - Healthcare Branding, Accessibility, Responsiveness */
+
+:root {
+  --ohia-blue: #0d2346;
+  --ohia-green: #43a047;
+  --ohia-white: #fff;
+  --ohia-gray: #f5f7fa;
+  --ohia-dark: #263238;
+  --ohia-accent: #00bcd4;
+  --font-primary: 'Roboto', Arial, sans-serif;
+  --font-heading: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--ohia-gray);
+  color: var(--ohia-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  background: var(--ohia-white);
+  border-bottom: 2px solid var(--ohia-blue);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1.2rem 0;
+}
+.ohia-logo {
+  height: 56px;
+  width: auto;
+  margin-right: 1rem;
+}
+.ohia-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--ohia-blue);
+  margin: 0;
+  font-weight: 600;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.main-nav a {
+  text-decoration: none;
+  color: var(--ohia-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--ohia-blue);
+  outline: none;
+}
+
+.hero-section {
+  background: linear-gradient(90deg, var(--ohia-blue) 60%, var(--ohia-green) 100%);
+  color: var(--ohia-white);
+  padding: 4rem 0 3rem 0;
+  text-align: left;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 600px;
+  background: url('../assets/network-bg.svg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-mission {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+.cta-btn {
+  display: inline-block;
+  background: var(--ohia-accent);
+  color: var(--ohia-white);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 32px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 188, 212, 0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.cta-btn:hover,
+.cta-btn:focus {
+  background: var(--ohia-blue);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+  outline: none;
+}
+
+.site-footer {
+  background: var(--ohia-blue);
+  color: var(--ohia-white);
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .ohia-title {
+    font-size: 1.5rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .ohia-logo {
+    height: 40px;
+  }
+  .hero-section {
+    padding: 2rem 0 1.5rem 0;
+    border-radius: 0 0 16px 16px;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .ohia-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Accessibility: Focus Styles */
+:focus {
+  outline: 2px solid var(--ohia-accent);
+  outline-offset: 2px;
+}
+
+/* High Contrast for Accessibility */
+@media (prefers-contrast: more) {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .site-header {
+    border-bottom: 2px solid #000;
+  }
+  .main-nav a {
+    color: #000;
+  }
+  .main-nav a:hover,
+  .main-nav a:focus {
+    color: var(--ohia-accent);
+  }
+}
