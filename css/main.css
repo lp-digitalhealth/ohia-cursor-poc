@@ -597,7 +597,7 @@ body {
   transform: translateX(-50%);
   width: 1200px;
   height: 600px;
-  background: url('../assets/network-bg.svg') no-repeat center center;
+  background: url('../assets/hero-collaboration.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.35;
   pointer-events: none;
