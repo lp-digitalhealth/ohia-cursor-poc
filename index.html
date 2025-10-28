@@ -270,10 +270,81 @@
         </div>
       </div>
     </section>
+<!-- Get Involved Section - Insert this BEFORE the </main> closing tag -->
+<section id="get-involved" class="get-involved-section">
+  <div class="container">
+    <h2 class="section-title">Get Involved</h2>
+    <div class="get-involved-content">
+      <div class="get-involved-intro">
+        <h3>Join the Alliance</h3>
+        <p>OHIA welcomes organizations committed to advancing dental-medical interoperability. Whether you're a healthcare provider, technology company, payer, or advocacy organization, your participation can help transform oral and medical health care.</p>
+        <p>Complete the form below to learn more about membership opportunities and how you can contribute to our mission.</p>
+      </div>
+      
+      <div class="contact-form-wrapper">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+          <!-- Honeypot field for spam protection (hidden from users) -->
+          <p class="hidden-field">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="organization">Organization *</label>
+            <input type="text" id="organization" name="organization" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="interest">Area of Interest *</label>
+            <select id="interest" name="interest" required>
+              <option value="">-- Select One --</option>
+              <option value="membership">Alliance Membership</option>
+              <option value="steering">Steering Committee</option>
+              <option value="collaboration">Technical Collaboration</option>
+              <option value="information">General Information</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="cta-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section - Optional, can also be combined with Get Involved -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-info">
+      <p>For inquiries about OHIA, please reach out through the form above or contact us directly:</p>
+      <p><strong>Email:</strong> <a href="mailto:info@ohia-alliance.org">info@ohia-alliance.org</a></p>
+    </div>
+  </div>
+</section>
   </main>
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Oral Health Interoperability Alliance. All rights reserved.</p>
+      <p>&copy; 2025 Leavitt Partners, an HMA Company. All rights reserved.</p>
     </div>
   </footer>
   <script src="js/main.js"></script>
